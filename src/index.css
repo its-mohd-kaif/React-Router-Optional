@@ -24,7 +24,7 @@ code {
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 27%;
+  width: 350px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;

@@ -96,7 +96,7 @@ function AddEdit() {
           defaultValue={from.login}
         />
         <span className="input-group-text" id="basic-addon2">
-          Login Id
+          Username
         </span>
       </div>
       <div className="input-group mb-3">
@@ -109,7 +109,7 @@ function AddEdit() {
           defaultValue={from.html_url}
         />
         <span className="input-group-text" id="basic-addon2">
-          HTML URL
+          Profile Link
         </span>
       </div>
       <div className="input-group mb-3">

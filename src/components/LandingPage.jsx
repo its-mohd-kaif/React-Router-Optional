@@ -50,7 +50,11 @@ function LandingPage() {
     <section>
       <div className="sidebar">
         <div className="offcanvas-header">
-          <h5 className="offcanvas-title" id="offcanvasLabel">
+          <h5
+            style={{ textAlign: "center" }}
+            className="offcanvas-title m-2"
+            id="offcanvasLabel"
+          >
             Your Contacts
           </h5>
         </div>

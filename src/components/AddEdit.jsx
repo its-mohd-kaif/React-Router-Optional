@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { dataContext } from "../App";
 
@@ -6,6 +6,7 @@ function AddEdit() {
   // useLocation hooks for helping into get data that send with routing state
   const location = useLocation();
   const { from } = location.state;
+
   // UseConext State
   const user = useContext(dataContext);
   // Ref For Input Fields
@@ -17,6 +18,12 @@ function AddEdit() {
   // Message State For Showing alerts
   const [message, setMessage] = useState("");
 
+  useEffect(() => {
+    if (from === "") {
+      loginRef.current.value = "";
+      urlRef.current.value = "";
+    }
+  }, [from]);
   // OnChange Image Handler
   const onImageChange = (event) => {
     if (event.target.files && event.target.files[0]) {
@@ -108,7 +115,7 @@ function AddEdit() {
       <div className="input-group mb-3">
         <input onChange={onImageChange} type={"file"} />
       </div>
-      <div class="d-grid gap-2">
+      <div className="d-grid gap-2">
         {from !== "" ? (
           <button
             onClick={() => editHandler(from.id)}
@@ -118,7 +125,11 @@ function AddEdit() {
             EDIT
           </button>
         ) : (
-          <button onClick={addHandler} class="btn btn-success" type="button">
+          <button
+            onClick={addHandler}
+            className="btn btn-success"
+            type="button"
+          >
             ADD
           </button>
         )}
@@ -132,7 +143,7 @@ function AddEdit() {
           {message}
           <button
             type="button"
-            class="btn-close"
+            className="btn-close"
             onClick={() => setMessage("")}
           ></button>
         </div>

@@ -90,7 +90,7 @@ function LandingPage() {
                 <Link
                   key={index}
                   to={"/contact"}
-                  className="list-group-item list-group-item-action p-3 m-2"
+                  className="list-group-item list-group-item-action p-3 mb-3"
                   aria-current="true"
                   // Pass Data Into Component
                   state={{ from: val }}

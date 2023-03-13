@@ -34,7 +34,7 @@ function Contact() {
             />
           </div>
           <div>
-            <h3 className="mt-5">{from.login}</h3>
+            <h3>{from.login}</h3>
             <div>
               <span>URL: </span>
               <a target={"_blank"} href={from.html_url} rel="noreferrer">

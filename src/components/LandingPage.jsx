@@ -48,11 +48,7 @@ function LandingPage() {
   };
   return (
     <section>
-      <div
-        className="offcanvas show offcanvas-start"
-        id="offcanvas"
-        aria-labelledby="offcanvasLabel"
-      >
+      <div className="sidebar">
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasLabel">
             Your Contacts

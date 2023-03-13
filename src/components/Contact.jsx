@@ -25,7 +25,7 @@ function Contact() {
   return (
     <div className="contact">
       {from !== "" ? (
-        <div className="d-flex justify-content-around">
+        <div className="d-flex">
           <div>
             <img
               style={{ width: "250px", height: "250px", borderRadius: "50%" }}
@@ -33,15 +33,15 @@ function Contact() {
               alt="avatar"
             />
           </div>
-          <div>
+          <div className="ms-5">
             <h3>{from.login}</h3>
             <div>
-              <span>URL: </span>
+              <span>Profile Link: </span>
               <a target={"_blank"} href={from.html_url} rel="noreferrer">
                 {from.html_url}
               </a>
             </div>
-            <div className="d-flex justify-content-around mt-5">
+            <div className="d-flex mt-5">
               <Link
                 // Pass Data To AddEdit Component
                 state={{ from: from }}

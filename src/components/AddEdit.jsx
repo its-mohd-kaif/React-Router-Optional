@@ -84,7 +84,11 @@ function AddEdit() {
 
   return (
     <div className="contact">
-      {from !== "" ? <h1>Edit Page</h1> : <h1>Add Page</h1>}
+      {from !== "" ? (
+        <h1>Edit Page</h1>
+      ) : (
+        <h1>Add Page</h1>
+      )}
 
       <div className="input-group mb-3">
         <input

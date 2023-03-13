@@ -33,15 +33,15 @@ function AddEdit() {
   // Validation Function
   const validation = () => {
     if (loginRef.current.value === "") {
-      setMessage("Login id field can not be empty!!");
+      setMessage("Username field can not be empty!!");
       loginRef.current.focus();
       return false;
     } else if (urlRef.current.value === "") {
-      setMessage("HTML URL field can not be empty!!");
+      setMessage("Profile Link field can not be empty!!");
       urlRef.current.focus();
       return false;
     } else if (image === "") {
-      setMessage("Choose Image !!");
+      setMessage("Choose Profile Image !!");
       return false;
     } else return true;
   };

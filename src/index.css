@@ -23,13 +23,12 @@ code {
 
 .sidebar {
   margin: 0;
-  padding: 0;
   width: 350px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
   overflow-y: auto;
-  overflow-x:hidden;
+  overflow-x: hidden;
   padding: 1em;
 }
 
@@ -37,7 +36,6 @@ code {
   background-color: #3a62f4;
   color: white;
 }
-
 
 .contact {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
